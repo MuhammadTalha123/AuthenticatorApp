@@ -151,14 +151,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="277dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/aclonica"
         android:onClick="depositMoney"
         android:text="deposit"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintVertical_bias="0.877" />
+
+    <Button
+        android:id="@+id/buttonCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="65dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/aclonica"
+        android:onClick="yourValue"
+        android:text="credit"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonDeposit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAmount"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

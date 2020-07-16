@@ -111,6 +111,20 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void yourValue (View view) {
+        String minus = editTextAmount.getText().toString();
+        if (minus.isEmpty()) {
+            Toast.makeText(this, "Please Add Some Amount", Toast.LENGTH_SHORT).show();
+            return;
+        } else {
+            int num1 = Integer.parseInt(minus);
+            int num2 = Integer.parseInt(balance.getText().toString());
+            int min = num2 - num1;
+            balance.setText(String.valueOf(min));
+            editTextAmount.setText("");
+        }
+    }
+
     public void logout (View view) {
         FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(getApplicationContext(),Login.class));
